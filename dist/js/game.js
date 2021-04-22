@@ -87,6 +87,7 @@ const getNewQuestion = () => {
     };
     
     localStorage.setItem('categoryScores', JSON.stringify(highScoresData));
+    localStorage.setItem('mostRecentScore', score);
     return window.location.assign('/end.html');
   }
 
